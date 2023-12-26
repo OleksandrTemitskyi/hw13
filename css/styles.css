@@ -1,0 +1,259 @@
+@import url("reset.css");
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* FORMS */
+
+.wrapper {
+  height: 100vh;
+  background: linear-gradient(rgba(22, 21, 21, 0.50), rgba(22, 21, 21, 0.50)), url("../image/pictures.jpg") no-repeat center/cover;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 496px;
+  height: 100%;
+  margin-left: auto;
+  padding: 60px 0;
+  background: rgba(233, 233, 233, 0.25);
+  backdrop-filter: blur(5px);
+  overflow: auto;
+}
+
+.forms {
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+/* SWITCH */
+
+
+.card__switch input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.card__switch input + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 340px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 1px solid #153416;
+  position: relative;
+  transition: all .3s linear;
+}
+
+.card__switch input + label::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 50%;
+  bottom: 1px;
+  border-radius: 30px;
+  background: #153416;
+	transition: all .4s linear;
+}
+
+.card__switch input:checked + label::before {
+  left: calc(50% - 1px);
+}
+
+.card__switch span {
+  color: #fff;
+  position: relative;
+  flex: 1 1 50%;
+}
+
+
+
+.title {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  padding-top: 75px;
+}
+
+.email, .password {
+  margin-top: 29px;
+  width: 100%;
+  width: 340px;
+  padding: 15px;
+  border-radius: 30px;
+  background: #929191;
+  border-style: none;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+
+.email::placeholder, .password::placeholder {
+  background: #929191;
+  color: #fff;
+  font-size: 12px;
+  outline: 0;
+}
+
+.email:focus, .password:focus {
+  background: #929191;
+  color: #fff;
+  font-size: 12px;
+  outline: 0;
+  box-shadow: 0 0 0 2px #153416;
+}
+
+.email:not(:placeholder-shown), .password:not(:placeholder-shown) {
+  background: #929191;
+  color: #fff;
+  font-size: 12px;
+  outline: 2px solid silver;
+}
+
+.custom-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding-top: 20px;
+  color: #fff;
+}
+
+.custom-checkbox label {
+  padding-left: 10px;
+	position: relative;
+}
+.custom-checkbox input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.custom-checkbox label::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -17px;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #d9d9d9;
+  border-radius: 2px;
+}
+
+.custom-checkbox input:checked + label::before  {
+	background: #153416;
+  border: 2px solid #153416;
+}
+
+.custom-checkbox input:checked + label::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -13px;
+	width: 6px;
+	height: 12px;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	transform: rotate(38deg);
+  
+}
+
+.forgot {
+  padding-left: 110px;
+  color: #153416;
+}
+
+button {
+  margin-top: 30px;
+  width: 340px;
+  height: 44px;
+  border-radius: 30px;
+  background: #153416;
+  color: #fff;
+}
+
+
+.registration {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 40px;
+}
+
+.register {
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+p {
+  color: #153416;
+}
+
+.test {
+  margin-top: 20px;
+}
+
+.messenger {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.messenger svg {
+  width: 24px;
+  height: 24px;
+  fill: #153416;
+  transition: .5s ease;
+}
+
+.messenger a:hover svg {
+  fill: rgb(143, 143, 30);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
